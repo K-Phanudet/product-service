@@ -1,0 +1,9 @@
+services:
+  test-db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: e2e-test-user
+      POSTGRES_PASSWORD: pwd-e2e
+      POSTGRES_DB: e2e-test-db
+    ports:
+      - "5433:5432" 
